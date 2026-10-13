@@ -191,4 +191,3 @@ Este proyecto ha sido diseñado, planificado y desarrollado en su totalidad por:
 ## 📄 Licencia
 
 Este proyecto está distribuido bajo la licencia MIT. Consulta el archivo `LICENSE` para más detalles.
-# SDD-podcast-project

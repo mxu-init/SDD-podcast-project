@@ -1,0 +1,23 @@
+# Dependencies
+node_modules/
+
+# Next.js build output
+.next/
+out/
+*.tsbuildinfo
+
+# Logs
+*.log
+npm-debug.log*
+
+# Environment
+.env
+.env*.local
+
+# Misc
+.DS_Store
+Thumbs.db
+*.tmp
+*.swp
+.vscode/
+.idea/

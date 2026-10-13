@@ -1,0 +1,113 @@
+.hero {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: var(--space-12);
+  align-items: center;
+  padding-block: var(--space-8) var(--space-16);
+}
+
+.eyebrow {
+  margin: 0 0 var(--space-3);
+  color: var(--color-accent);
+  font-size: var(--text-sm);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.heroTitle {
+  font-size: var(--text-hero);
+  margin: 0 0 var(--space-4);
+  background: linear-gradient(120deg, var(--color-text) 30%, var(--color-accent-strong));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.heroTagline {
+  margin: 0 0 var(--space-8);
+  color: var(--color-text-muted);
+  font-size: var(--text-lg);
+  font-style: italic;
+  max-width: 34ch;
+}
+
+.heroActions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-4);
+}
+
+.primaryAction,
+.secondaryAction {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: var(--space-3) var(--space-6);
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: var(--text-sm);
+  transition: transform 0.15s ease, background 0.15s ease, color 0.15s ease;
+}
+
+.primaryAction {
+  background: var(--color-accent);
+  color: var(--color-accent-contrast);
+}
+
+.primaryAction:hover {
+  background: var(--color-accent-strong);
+  transform: translateY(-1px);
+}
+
+.secondaryAction {
+  border: 1px solid var(--color-border);
+  color: var(--color-text);
+}
+
+.secondaryAction:hover {
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+}
+
+.heroArt img {
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow);
+  transform: rotate(2deg);
+}
+
+.featuredSection,
+.cta {
+  padding-block: var(--space-12);
+  border-top: 1px solid var(--color-border);
+}
+
+.sectionTitle {
+  font-size: var(--text-xl);
+  color: var(--color-text);
+}
+
+.ctaText {
+  color: var(--color-text-muted);
+  max-width: 52ch;
+  margin: 0 0 var(--space-6);
+}
+
+@media (max-width: 768px) {
+  .hero {
+    grid-template-columns: 1fr;
+    gap: var(--space-8);
+    padding-block: var(--space-4) var(--space-12);
+  }
+
+  .heroArt {
+    order: -1;
+  }
+
+  .heroArt img {
+    margin-inline: auto;
+    transform: none;
+    max-width: 320px;
+  }
+}
